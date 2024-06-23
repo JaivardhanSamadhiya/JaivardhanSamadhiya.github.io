@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skinsnap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 600px;
+      margin: 20px; /* Add margin for spacing between sections */
+      position: relative; /* Position relative for positioning the button */
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    button {
+      position: absolute; /* Position absolute for overlapping */
+      bottom: 10px; /* Adjusted bottom position for spacing */
+      left: 50%; /* Center the button horizontally */
+      transform: translateX(-50%); /* Center the button horizontally */
+      display: none;
+    }
+    
+    .sigma {
+      appearance: button;
+      background-color: #000;
+      background-image: none;
+      border: 1px solid #000;
+      border-radius: 4px;
+      box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin: 0 5px 10px 0;
+      overflow: visible;
+      padding: 12px 40px;
+      text-align: center;
+      text-transform: none;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    h3 {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Raleway';
+      font-size: 60px;
+      margin-bottom: 0;
+    }
+
+    h4{
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      color: black;
+      align-items: center;
+      text-align: center;
+      font-size: 140%;
+      font-weight: 200;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Your Prediction: Ringworm</h3>
+  <br>
+      <h4>Recommended Products Selected with cost and quality in mind</h4>
+    <div>
+    <br>
+      <section>  
+        <img src="Tolnaftate.png" alt="Tolnaftate" id="ohio">
+        <button id="ohio-btn" class="sigma" onclick="window.open('https://www.amazon.com/CareALL%C2%AE-Antifungal-Tolnaftate-Tinactin-Athletes/dp/B08L361C8F/ref=sr_1_4?dib=eyJ2IjoiMSJ9.Z04zSc9LYPliWxuKNyTCEcTdK5SwbGI711sTop4sdDPhAWV79UDUYa8qkchmdvc4dW438P7AWzfBF19ICtGNKnvHt7TBdJPT3tv3OdmhayXXLGoxL-PbM_yBWMTFNmdLVPZZoSHtAd-FRlmLe3wmSCNhw8tfb34itv0SDDd6j55CNExbOYCS46dCcIa5bNI-wS50vNQAL8mjYO3QOcXMBe-vApCmH-WGtFmI76MqhRMgttU8f2GF5AYI7uiloJ1PKY6AQ8EegiuJrGE0UjS9VaJd0AuJNhQTtZqA0_3uFOI.cTKUK0STKQPKHT54KtLchSodd4J7Y3u_7Pa0dLEfK_8&dib_tag=se&hvadid=635372152297&hvdev=c&hvlocphy=9032178&hvnetw=g&hvqmt=e&hvrand=16869916851493776853&hvtargid=kwd-296739354928&hydadcr=21658_13423339&keywords=tolnaftate+antifungal&qid=1719123248&s=hpc&sr=1-4')">Buy Now</button>
+      </section>
+      <section>    
+        <img src="Econazole.png" alt="Econazole" id="fish">
+        <button id="fish-btn" class="sigma" onclick="window.open('https://pharmacy.amazon.com/Perrigo-ECONAZOLE-NITRATE-CREAM-Tube/dp/B084BMVPL5?ref_=sr_1_1&keywords=econazole+nitrate+cream&dib_tag=se&dib=eyJ2IjoiMSJ9.QESju0Pixe8BN-G47vDXemSWyYGXoRfXMV8hp9Po6w6d2DvtrigWFiDCECkVsyU1.PSd00S8gqNxFou4haw2GQ3pbiVcGB27pNoqYQl3GeTk&qid=1719123332&sr=8-1')">Buy Now</button>
+      </section>
+      <section>  
+        <img src="Griseofulvin.png" alt="Griseofulvin 250MG" id="fanum">
+        <button id="fanum-btn" class="sigma" onclick="window.open('https://pharmacy.amazon.com/Griseofulvin-Generic-for-Gris-PEG-Oral-Tablet/dp/B09Y36QTDX?')">Buy Now</button>
+      </section>
+    </div>
+
+  <script>  
+    //ohio and ohio-btn now
+    document.getElementById('ohio-btn').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('ohio-btn').style.display = 'block';
+    });
+    document.getElementById('ohio').addEventListener('mouseout', function() {
+      // Show the button on hover
+      document.getElementById('ohio-btn').style.display = 'none';
+    });
+    document.getElementById('ohio').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('ohio-btn').style.display = 'block';
+    });
+    //fish and fish-btn
+    document.getElementById('fish-btn').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fish-btn').style.display = 'block';
+    });
+    document.getElementById('fish').addEventListener('mouseout', function() {
+      // Show the button on hover
+      document.getElementById('fish-btn').style.display = 'none';
+    });
+    document.getElementById('fish').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fish-btn').style.display = 'block';
+    });
+    //fanum and fanum-btn
+    document.getElementById('fanum-btn').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fanum-btn').style.display = 'block';
+    });
+    document.getElementById('fanum').addEventListener('mouseout', function() {
+      // Show the button on hover
+      document.getElementById('fanum-btn').style.display = 'none';
+    });
+    document.getElementById('fanum').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fanum-btn').style.display = 'block';
+    });
+  </script>
+  <footer>Disclaimer: Our AI isn't 100% accurate consult with a dermatologist for a more accurate diagnosis.</footer>
+</body>
+</html>

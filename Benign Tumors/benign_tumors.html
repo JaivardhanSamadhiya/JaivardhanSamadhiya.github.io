@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skinsnap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 600px;
+      margin: 20px; /* Add margin for spacing between sections */
+      position: relative; /* Position relative for positioning the button */
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    button {
+      position: absolute; /* Position absolute for overlapping */
+      bottom: 10px; /* Adjusted bottom position for spacing */
+      left: 50%; /* Center the button horizontally */
+      transform: translateX(-50%); /* Center the button horizontally */
+      display: none;
+    }
+    
+    .sigma {
+      appearance: button;
+      background-color: #000;
+      background-image: none;
+      border: 1px solid #000;
+      border-radius: 4px;
+      box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin: 0 5px 10px 0;
+      overflow: visible;
+      padding: 12px 40px;
+      text-align: center;
+      text-transform: none;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    h3 {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Raleway';
+      font-size: 60px;
+      margin-bottom: 0;
+    }
+
+    h4{
+      font-family: "Raleway", sans-serif;
+      text-decoration: none;
+      color: black;
+      align-items: center;
+      text-align: center;
+      font-size: 140%;
+      font-weight: 200;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Your Prediction: Benign Tumors</h3>
+  <br>
+      <h4>Recommended Products Selected with cost and quality in mind</h4>
+    <div>
+    <br>
+      <section>  
+        <img src="Cabergoline.png" alt="Cabergoline" id="ohio">
+        <button id="ohio-btn" class="sigma" onclick="window.open('https://pharmacy.amazon.com/Greenstone-CABERGOLINE-0-5-MG-TABLET-Bottle-8-Tablet/dp/B0C9GNWJNC?')">Buy Now</button>
+      </section>
+      <section>    
+        <img src="Aspirin.png" alt="Aspirin" id="fish">
+        <button id="fish-btn" class="sigma" onclick="window.open('https://www.amazon.com/Amazon-Basic-Care-Reliever-Chewable/dp/B083WC1R4N/ref=sr_1_1_ffob_sspa?dib=eyJ2IjoiMSJ9.eej4JFL5rqDmgOcYDHOCzErST4NceaD5I4i_SUXOlCDOulkaaBVCzTvRe3aJ8Y7U35uJO67C_uM5OQrOkIFV0XvceQ7GPWJN5ButPbBUfT6K-RH54F4Fgt0e49u1e2G4lLhElZTEKKpl6eThYaHZnk4sYfbGdEiY1yF6aHvk7Zw5sCoUhFhNJkO_dLpquRF0kakxfawzmQFZaM_8zdGOEfqM_54pTMGqTDWhOd04n6_gy2YOY3eacapQdCgzwPOWacSJk-sPLMFTBwObNJ4NIc3ek7C5eEnJMnbmVPKzsRE.FThL8b6aalqqq56u5LVkw3CXmvD5el6PJPfdXCnKpXY&dib_tag=se&hvadid=635419959299&hvdev=c&hvlocphy=9032178&hvnetw=g&hvqmt=e&hvrand=9439740915517200147&hvtargid=kwd-31831461&hydadcr=4018_13285927&keywords=aspirin&qid=1719122444&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1')">Buy Now</button>
+      </section>
+      <section>  
+        <img src="Octreotide.png" alt="Octreotide" id="fanum">
+        <button id="fanum-btn" class="sigma" onclick="window.open('https://pharmacy.amazon.com/Octreotide-Generic-for-Sandostatin-Injection/dp/B0932KM6S3?')">Buy Now</button>
+      </section>
+    </div>
+
+  <script>  
+    //ohio and ohio-btn now
+    document.getElementById('ohio-btn').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('ohio-btn').style.display = 'block';
+    });
+    document.getElementById('ohio').addEventListener('mouseout', function() {
+      // Show the button on hover
+      document.getElementById('ohio-btn').style.display = 'none';
+    });
+    document.getElementById('ohio').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('ohio-btn').style.display = 'block';
+    });
+    //fish and fish-btn
+    document.getElementById('fish-btn').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fish-btn').style.display = 'block';
+    });
+    document.getElementById('fish').addEventListener('mouseout', function() {
+      // Show the button on hover
+      document.getElementById('fish-btn').style.display = 'none';
+    });
+    document.getElementById('fish').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fish-btn').style.display = 'block';
+    });
+    //fanum and fanum-btn
+    document.getElementById('fanum-btn').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fanum-btn').style.display = 'block';
+    });
+    document.getElementById('fanum').addEventListener('mouseout', function() {
+      // Show the button on hover
+      document.getElementById('fanum-btn').style.display = 'none';
+    });
+    document.getElementById('fanum').addEventListener('mouseover', function() {
+      // Show the button on hover
+      document.getElementById('fanum-btn').style.display = 'block';
+    });
+  </script>
+  <footer>Disclaimer: Our AI isn't 100% accurate consult with a dermatologist for a more accurate diagnosis.</footer>
+</body>
+</html>

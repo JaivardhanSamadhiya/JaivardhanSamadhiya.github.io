@@ -47,14 +47,32 @@
       transform: translateX(-50%); /* Center the button horizontally */
       display: none;
     }
-    .sigma{
-      width: 10%;
-      padding: 10px;
-      margin: 10px 0;
+    
+    .sigma {
+      appearance: button;
+      background-color: #000;
+      background-image: none;
+      border: 1px solid #000;
+      border-radius: 4px;
+      box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
       box-sizing: border-box;
-      border: 1px solid #ccc; /* Added a border for input elements */
-      border-radius: 4px; /* Rounded corners */
-      background-color: whitesmoke;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin: 0 5px 10px 0;
+      overflow: visible;
+      padding: 12px 40px;
+      text-align: center;
+      text-transform: none;
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
     }
 
     h3 {
@@ -66,11 +84,13 @@
     }
 
     h4{
-      font-family: 'Salsa', cursive;
+      font-family: "Raleway", sans-serif;
       text-decoration: none;
       color: black;
       align-items: center;
       text-align: center;
+      font-size: 140%;
+      font-weight: 200;
     }
   </style>
 </head>
@@ -78,57 +98,24 @@
 <body>
   <h3>Your Prediction: Rosacea</h3>
   <br>
-  <div style="display: flex; flex-direction: column;">
-    <section>
-      <h4>Our Recommendation</h4>
-      <img src="Hyperpigmentation%20conrad%20challenge.png" alt="Hyperpigmentation_Solution_Image" id="sigma">
-      <button id="sigma-btn" class="sigma">Buy Now</button>
-    </section>
-    <br>
+      <h4>Recommended Products Selected with cost and quality in mind</h4>
     <div>
-      <h4>Other Products</h4>
-    </div>
     <br>
       <section>
-      <img src="ORDINARY%20LOL.png" alt="Ordinary Cream Care" id="ohio">
-      <button id="ohio-btn" class="sigma" onclick="window.open('https://www.kohls.com/product/prd-5075742/the-ordinary-azelaic-acid-10-suspension-brightening-cream.jsp?skuid=78185916&utm_medium=sem&utm_source=admedia&utm_account=admedia&utm_campaign=search_26_119336')">Buy Now</button>
+      <img src="Rosacea_mens.png" alt="Men's Facial Applier" id="ohio">
+      <button id="ohio-btn" class="sigma" onclick="window.open('https://www.amazon.com/Prevent-Control-Azelaic-Soothing-Cruelty/dp/B086H4PXNW/ref=sr_1_1?crid=35SZA6Y8GIRT9&dib=eyJ2IjoiMSJ9.ae_pPBYDxXvo9KlKufEUmbIbhkD_G8NoLhVCPhwPiCqW5LCOutr0z6PYXwgpJA7QVhs84zUs2TjvHQfdcc2DCCjqZnq53FPSQNVYupg9ixrKmpENj58UuzWMqnO-q7DB3vnzdaPlqlICY_gZEUCWBqIMGefEKDsnL1wN4cACPGkmkOtjipFKUecujA_xGq9_s4FeUTR9RriNRKmcGcFvBrikG75NIO3ha7bCbvJdaoUdRoXE5eV6U2aBh_9XBqhyUVynw3TuOjDf9Muf5ZA0aaBnuWGMdybazmGf-sgokW8.oDkZaAAkWVkYS-WekbZ1WQapAEFXTtb1ZnYEuhWJhqQ&dib_tag=se&keywords=azelaic+acid+products&qid=1719034184&sprefix=azealic+acid+products%2Caps%2C142&sr=8-1')">Buy Now</button>
     </section>
     <section>
       <img src="SKIBIDI.png" alt="Skincare Gel" id="fish">
       <button id="fish-btn" class="sigma" onclick="window.open('https://www.target.com/p/prosacea-rosacea-treatment-gel-0-75oz/-/A-80380323')">Buy Now</button>
     </section>
     <section>
-      <img src="MIMI.png" alt="Moisturizer" id="fanum">
-      <button id="fanum-btn" class="sigma" onclick="window.open('https://www.laroche-posay.us/our-products/face/face-moisturizer/toleriane-rosaliac-ar-face-cream-for-visible-redness-3337875807043.html')">Buy Now</button>
+      <img src="Rosacea_serum.png" alt="Facial Serum" id="fanum">
+      <button id="fanum-btn" class="sigma" onclick="window.open('https://www.amazon.com/Azelaic-Solution-Swelling-Treatment-Professional/dp/B093ZY2FRT/ref=sr_1_3?crid=A0D4PJD5R4T7&dib=eyJ2IjoiMSJ9.ae_pPBYDxXvo9KlKufEUmbIbhkD_G8NoLhVCPhwPiCqW5LCOutr0z6PYXwgpJA7QVhs84zUs2TjvHQfdcc2DCCjqZnq53FPSQNVYupg9ixrKmpENj58UuzWMqnO-q7DB3vnzdaPlqlICY_gZEUCWBqIMGefEKDsnL1wN4cACPGkmkOtjipFKUecujA_xGq9_s4FeUTR9RriNRKmcGcFvBrikG75NIO3ha7bCbvJdaoUdRoXE5eV6U2aBh_9XBqhyUVynw3TuOjDf9Muf5ZA0aaBnuWGMdybazmGf-sgokW8.oDkZaAAkWVkYS-WekbZ1WQapAEFXTtb1ZnYEuhWJhqQ&dib_tag=se&keywords=azelaic+acid+products&qid=1719034605&sprefix=%2Caps%2C143&sr=8-3')">Buy Now</button>
     </section>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <script>
-    document.getElementById('sigma-btn').addEventListener('click', function() {
-      Swal.fire({
-        position: 'top',
-        icon: 'success',
-        title: 'Hyperpigmentation Care Purchase',
-        text: 'One item added to cart.',
-        showConfirmButton: false,
-        timer: 2000 // Set the timer to automatically close the popup after 2 seconds
-      });
-    });
-
-    // Add event listeners for hover effect
-    document.getElementById('sigma-btn').addEventListener('mouseover', function() {
-      // Show the button on hover
-      document.getElementById('sigma-btn').style.display = 'block';
-    });
-    document.getElementById('sigma').addEventListener('mouseout', function() {
-      // Show the button on hover
-      document.getElementById('sigma-btn').style.display = 'none';
-    });
-    document.getElementById('sigma').addEventListener('mouseover', function() {
-      // Show the button on hover
-      document.getElementById('sigma-btn').style.display = 'block';
-    });
+  <script>  
     //ohio and ohio-btn now
     document.getElementById('ohio-btn').addEventListener('mouseover', function() {
       // Show the button on hover
@@ -169,5 +156,6 @@
       document.getElementById('fanum-btn').style.display = 'block';
     });
   </script>
+  <footer>Disclaimer: Our AI isn't 100% accurate consult with a dermatologist for a more accurate diagnosis.</footer>
 </body>
 </html>
